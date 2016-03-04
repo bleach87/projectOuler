@@ -21,11 +21,14 @@ public class Problem_3 {
 					isDev = false;
 					break;
 				}
-				num = num/i;
-				System.out.println("devNum : "+num);
 				continue;
 			}
-			i++;
+			System.out.println("test::::::");
+			if( isDev == true ){
+				num = num/i;
+				System.out.println("devNum : "+num);	
+			}
+			++i;
 		}
 		
 	}
