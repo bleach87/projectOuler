@@ -9,16 +9,25 @@ public class Problem_3 {
 		
 		System.out.println(":::::problem_3:::::");
 		
-		// ex)
-		int max = 0;
+		int i=2;
 		int num = 13195;
+		int result = 0;
+		boolean isDev = true;
+		int devNum;
 		
-		for(int i=1; i<num; i++){
-			if(num%i == 0 ){
-				max = i;
+		while( num > 0 ){
+			for(int n=1; n<i; n++){
+				if( (n != i) && (i%n == 0) ){
+					isDev = false;
+					break;
+				}
+				num = num/i;
+				System.out.println("devNum : "+num);
+				continue;
 			}
+			i++;
 		}
-		System.out.println("max : "+max);
+		
 	}
 
 }
