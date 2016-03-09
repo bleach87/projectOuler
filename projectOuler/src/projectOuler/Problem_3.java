@@ -9,27 +9,18 @@ public class Problem_3 {
 		
 		System.out.println(":::::problem_3:::::");
 		
-		int i=2;
-		int num = 13195;
-		int result = 0;
-		boolean isDev = true;
-		int devNum;
 		
-		while( num > 0 ){
-			for(int n=1; n<i; n++){
-				if( (n != i) && (i%n == 0) ){
-					isDev = false;
-					break;
-				}
-				continue;
+		long num = 600851475143L;
+		long devNum=num;
+		
+		for(long i=2; i<num; i++){
+			if(devNum%i == 0){
+				devNum = devNum/i;
+				System.out.println("num : "+i+":::"+devNum);
 			}
-			System.out.println("test::::::");
-			if( isDev == true ){
-				num = num/i;
-				System.out.println("devNum : "+num);	
-			}
-			++i;
 		}
+		
+		
 		
 	}
 
