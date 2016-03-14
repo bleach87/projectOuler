@@ -13,7 +13,6 @@ public class Problem_5 {
 		System.out.println(":::::problem_5:::::");
 		
 		int result = 11;
-//		ArrayList<String> resultArr = new ArrayList<String>();
 		ArrayList arrNum = new ArrayList();
 		
 		
@@ -32,7 +31,6 @@ public class Problem_5 {
 			
 			if(isCheck){
 				System.out.println("result : "+ result );
-//				result = -1;
 				break;
 			}
 			result++;
