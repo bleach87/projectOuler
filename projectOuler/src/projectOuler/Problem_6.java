@@ -2,8 +2,6 @@ package projectOuler;
 
 import java.util.ArrayList;
 
-import javax.swing.plaf.synth.SynthSeparatorUI;
-
 public class Problem_6 {
 
 	public static void main(String[] args) {
@@ -16,9 +14,23 @@ public class Problem_6 {
 		
 		System.out.println(":::::problem_6:::::");
 		
+		ArrayList numArr_1 = new ArrayList();
+		int result_1 = 0; 
+		int result_2 = 0;
+		int result;
 		
+		for(int i=1; i<101; i++){
+			numArr_1.add( (int)Math.pow(i, 2) );
+			result_2 += i;
+		}
+		for(int i=0; i<numArr_1.size(); i++){
+			result_1 += (int)numArr_1.get(i);
+		}
 		
+		result_2 = (int)Math.pow(result_2, 2);
+		result = result_2 - result_1;
 		
+		System.out.println(result);
 	}
 
 }

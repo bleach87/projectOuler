@@ -2,8 +2,6 @@ package projectOuler;
 
 import java.util.ArrayList;
 
-import javax.swing.plaf.synth.SynthSeparatorUI;
-
 public class Problem_5 {
 
 	public static void main(String[] args) {
